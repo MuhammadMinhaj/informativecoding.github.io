@@ -1,0 +1,49 @@
+/* Global Variable */
+:root {
+  --darkGrayDeep: #182026;
+  --darkGrayMidd: #202b33;
+  --darkGrayNormal: #293742;
+  --darkGray: #30404d;
+}
+/* Bangla Fonts */
+@font-face {
+  font-family: AdorShurobhi;
+  src: url("/fonts/bn/AdorShurobhi/ANSI V1/Li Ador Shurobhi ANSI V1.ttf");
+}
+@font-face {
+  font-family: Kalpurush;
+  src: url("/fonts/bn/Kalpurush/Kalpurush-Regular.ttf");
+}
+@font-face {
+  font-family: Nikosh;
+  src: url("/fonts/bn/Nikosh/Nikosh-Regular_jvTyYV3.ttf");
+}
+@font-face {
+  font-family: ShohidBarkat;
+  src: url("/fonts/bn/ShohidBarkat/ANSI V1/Li Shohid Barkat ANSI V1.ttf");
+}
+/* English Fonst */
+@font-face {
+  font-family: sourcesanspro;
+  src: url("/fonts/en/sourcesanspro/sourcesanspro/SourceSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: spacemono;
+  src: url("/fonts/en/spacemono/spacemono/SpaceMono-Regular.ttf");
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
