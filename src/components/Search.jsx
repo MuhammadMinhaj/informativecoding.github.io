@@ -1,24 +1,19 @@
-/**
- * Date:01/04/2021
- * Author: Muhammad Minhaj
- * Title: SEARCH COMPONENT
- * Description: Create Search Component
- * * */
-import Divider from '@material-ui/core/Divider';
-import IconButton from '@material-ui/core/IconButton';
-import InputBase from '@material-ui/core/InputBase';
-import Paper from '@material-ui/core/Paper';
+// /**
+//  * Date:01/04/2021
+//  * Author: Muhammad Minhaj
+//  * Title: SEARCH COMPONENT
+//  * Description: Create Search Component
+//  * * */
+import { Divider, IconButton, InputBase } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import DirectionsIcon from '@material-ui/icons/Directions';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
+import { Search as SearchIcon } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         padding: '2px 4px',
         display: 'flex',
         alignItems: 'center',
-        width: 400,
+        width: '100%',
     },
     input: {
         marginLeft: theme.spacing(1),
@@ -37,22 +32,16 @@ export default function CustomizedInputBase() {
     const classes = useStyles();
 
     return (
-        <Paper component="form" className={classes.root}>
-            <IconButton className={classes.iconButton} aria-label="menu">
-                <MenuIcon />
-            </IconButton>
+        <div className={classes.root}>
             <InputBase
                 className={classes.input}
-                placeholder="Search Google Maps"
-                inputProps={{ 'aria-label': 'search google maps' }}
+                placeholder="Search In Bangla..."
+                inputProps={{ 'aria-label': 'Search in bangla' }}
             />
             <IconButton type="submit" className={classes.iconButton} aria-label="search">
                 <SearchIcon />
             </IconButton>
             <Divider className={classes.divider} orientation="vertical" />
-            <IconButton color="primary" className={classes.iconButton} aria-label="directions">
-                <DirectionsIcon />
-            </IconButton>
-        </Paper>
+        </div>
     );
 }
