@@ -3,13 +3,14 @@
 }
 .dropDown {
   width: 100%;
-  z-index: 1 !important;
+  /* z-index: 1 !important; */
+  z-index: 1000 !important;
   position: absolute;
   border-radius: 0px 0px 4px 4px !important;
   display: flex;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
   .dropDown {
     height: 100%;
     position: relative;

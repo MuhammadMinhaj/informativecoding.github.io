@@ -50,13 +50,14 @@ a {
 .MuiBackdrop-root {
   align-items: flex-start !important;
   top: 73px !important;
-  z-index: 0 !important;
+  /* z-index: 0 !important; */
+  z-index: 999 !important;
 }
 
 @media only screen and (max-width: 600px) {
   .MuiBackdrop-root {
     align-items: flex-start !important;
     top: 0px !important;
-    z-index: 1 !important;
+    /* z-index: 1 !important; */
   }
 }

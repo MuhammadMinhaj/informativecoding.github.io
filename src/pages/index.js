@@ -5,13 +5,24 @@
  * Description: Web Home Page
  * * */
 
+import commonComponents from '../components/common';
+import Explore from '../components/Explore';
 import Layout from '../components/Layout';
+import Sldie from '../components/Slide';
+import Tutorials from '../components/Tutorials';
 
+const { Margin } = commonComponents;
 export default function name() {
     return (
         <>
             <Layout>
-                <h1>Assalamu ALaikum</h1>
+                <Margin />
+                <Sldie />
+                <Margin />
+                <Tutorials />
+                <Margin />
+                <Explore />
+                <Margin />
             </Layout>
         </>
     );
